@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #FDF1E7;
+    --title-color: #FFD405;
+    --main-color: #700027;
+    --lettering-color: #430C15;
+    --title-font: "Aguafina Script";
+}
+
+body {
+    background-color: var(--background-color);
+}
