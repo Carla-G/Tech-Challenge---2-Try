@@ -6,18 +6,19 @@
 }
 
 :root {
-    --background-color: #FDF1E7;
+    --background-color: #f1e0d1;
     --title-color: #FFD405;
     --main-color: #700027;
-    --lettering-color: #430C15;
+    --lettering-color: #4d0b16;
     --title-font: "Aguafina Script";
+    --text-font: 'Stint Ultra Condensed', cursive;
 }
 
 body {
     background-color: var(--background-color)
 }  
 
-header {
+.nav-bar {
     background-color: var(--main-color); 
 }
 
@@ -26,7 +27,7 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 0.6vw solid var(--title-color);
+    border-bottom: 0.8vw solid var(--title-color);
 }
 
 li { 
@@ -38,10 +39,13 @@ a {
     text-decoration: none;
     color: var(--title-color);
     font-weight: 600;
+    font-family: var(--text-font);
+    font-size: 5vw;
 }
 
 .logo a {
     color: #e6de79;
+    font-family: var(--title-font);
 }
 
 .logo {
@@ -53,10 +57,10 @@ a {
 }
 
 .banner {
-    background-image: url("src/kingdom.jpg");
+    background-image: url("src/royal-garden.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 25vw 0;
+    padding: 8vw 0;
 }
 
 h1 {
@@ -69,21 +73,136 @@ h1 {
 }
 
 .history, .hero, .royal-family {
-    margin: 4vw 6vw
+    margin: 10vw 6vw 4vw 6vw;
 }
 
 h2 {
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
+    padding-left: 4vw;
     font-family: var(--title-font);
-    font-size: 11vw;
+    font-size: 9vw;
     color: var(--lettering-color)
 }
 
 .text {
-
+    text-align: justify;
+    margin-bottom: 3vw;
+    font-family: var(--text-font);
+    font-size: 5vw;
 }
 
-img {
+#author {
+    font-weight: 600;
+    width: 100%;
+    text-align: right;
+    color: var(--main-color);
+    font-family: var(--title-font);
+    font-size: 5vw;
+}
+
+a.learn {
+    text-align: right;
+    margin-bottom: 3vw;
+    color: var(--main-color);
+}
+
+.library {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 75%;
+    border-radius: 30px;
+}
+
+div.img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+div.img-container img {
+    width: 100%;
+    border-radius: 30px;
+    padding: 2vw;
+}
+
+footer {
+    background-color: var(--main-color);
+}
+
+footer img {
+    width: 19%;
     height: auto;
+    padding: 3% 5%;
+}
+
+#footer-text {
+    color: var(--title-color);
+    font-size: 4vw;
+    font-weight: 700;
+    font-family: var(--text-font);
+}
+
+@media screen and (min-width: 850px) { 
+    nav ul {
+        border-bottom: 0.45vw solid var(--title-color);
+        justify-content: space-between;
+    }
+
+    li {
+        padding: 0.4vw 1vw;
+        }
+
+    a {
+        font-weight: 400;
+        font-size: 4vw;
+    }
+
+    .logo a {
+        font-size: 5vw;
+        font-family: var(--title-font);
+        font-weight: 300;
+        
+    }
+
+    .logo {
+        line-height: 3.9vw;
+        padding: 2vw;
+    }
+
+    .banner {
+        background-image: url("src/royal-garden.jpg");
+        padding: 6rem;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        opacity: 100%;
+        color: #f7c80c;
+        font-weight: 900;
+    }
+
+    .history, .hero, .royal-family {
+        margin: 3.5vw 6vw ;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+
+    #author {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .history {
+        cd
+    }
 }
