@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --background-color: #f1e0d1;
+    --title-color: #FFD405;
+    --main-color: #700027;
+    --lettering-color: #4d0b16;
+    --title-font: "Aguafina Script";
+    --text-font: 'Stint Ultra Condensed', cursive;
+}
+
+body {
+    background-color: var(--background-color)
+}
+
+main {
+    margin: 0 7%;
+}
+
+.nav-bar {
+    background-color: var(--main-color); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 0.8vw solid var(--title-color);
+}
+
+li { 
+    text-align: center;
+    padding: 3vw 0;
+}     
+
+a {
+    text-decoration: none;
+    color: var(--title-color);
+    font-weight: 600;
+    font-family: var(--text-font);
+    font-size: 5vw;
+}
+
+.logo a {
+    color: #e6de79;
+    font-family: var(--title-font);
+}
+
+.logo {
+    margin-left: 0;
+    font-size: 6vw;
+    text-align: left; 
+    font-family: var(--title-font);
+    line-height: 6vw;
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-size: 9vw;
+    color: var(--lettering-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    margin: 0 10%;
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: var(--text-font);
+}
+
+input {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+  
+textarea {
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 8rem;
+}
+
+footer {
+    background-color: var(--main-color);
+}
+
+footer img {
+    width: 19%;
+    height: auto;
+    padding: 3% 5%;
+}
+
+#footer-text {
+    color: var(--title-color);
+    font-size: 4vw;
+    font-weight: 700;
+    font-family: var(--text-font);
+}
+
+.button {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    width: 30%;
+    border-radius: 20px;
+    background-color: var(--title-color);
+    font-family: var(--text-font);
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--lettering-color);
+}
+
+@media screen and (min-width: 850px) { 
+    nav ul {
+        border-bottom: 0.45vw solid var(--title-color);
+        justify-content: space-between;
+    }
+
+    a {
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+
+    li {
+        padding: 0.5rem;
+    }
+
+    .logo a {
+        font-size: 3rem;
+        font-family: var(--title-font);
+        font-weight: 300;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    label {
+        font-size: 2.5rem;
+    }
+
+    input {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .button:hover {
+        cursor: pointer;
+        box-shadow: none;
+    }
+
+    img.crown {
+        width: 5%;
+        height: auto;
+        padding: 1.5% 1% 1.5% 1%;
+    }
+
+    footer img {
+        width: 5%;
+        height: auto;
+        padding: 1.5% 1% 1.5% 1%;
+        align: center;
+    }
+    
+    #footer-text {
+        font-size: 1.3rem;
+    }
+}
