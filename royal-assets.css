@@ -16,7 +16,11 @@
 
 body {
     background-color: var(--background-color)
-}  
+}
+
+main {
+    margin: 1.2rem 3rem 3rem;
+}
 
 .nav-bar {
     background-color: var(--main-color); 
@@ -56,77 +60,41 @@ a {
     line-height: 6vw;
 }
 
-.banner {
-    background-image: url("src/castle.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 8vw 0;
-}
-
 h1 {
     font-family: var(--title-font);
-    text-align: center;
-    font-size: 11vw;
-    color: var(--title-color);
-    opacity: 80%;
-}
-
-.history, .hero, .royal-family {
-    margin: 10vw 6vw 4vw 6vw;
-}
-
-h2 {
-    margin-bottom: 1vw;
-    padding-left: 4vw;
-    font-family: var(--title-font);
     font-size: 9vw;
-    color: var(--lettering-color)
+    color: var(--lettering-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.text {
-    text-align: justify;
-    margin-bottom: 3vw;
-    font-family: var(--text-font);
-    font-size: 5vw;
-}
-
-#author {
-    font-weight: 600;
+table {
+    border: 2px solid;
     width: 100%;
-    text-align: right;
-    color: var(--main-color);
-    font-family: var(--title-font);
-    font-size: 5vw;
-}
-
-a.learn {
-    text-align: right;
-    margin-bottom: 3vw;
-    color: var(--main-color);
-}
-
-.library {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    border-radius: 30px;
-}
-
-div.img-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 10%;
-}
-
-div.img-container img {
-    width: 100%;
-    border-radius: 30px;
-    padding: 1rem;
-}
+    border-color: var(--title-color);
+    overflow: scroll;
+  }
+  
+  th {
+    background-color: var(--title-color);
+    font-size: 2rem;
+    color: var(--lettering-color);
+  }
+  
+  td {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(44, 40, 40);
+    padding: 1rem 0;
+  }
+  
+  .color1 {
+    background-color: white;
+  }
+  
+  .color2 {
+    background-color: rgb(238, 235, 208);
+  }
 
 footer {
     background-color: var(--main-color);
@@ -166,43 +134,8 @@ footer img {
         font-weight: 300;
     }
 
-    .banner {
-        padding: 4rem;
-        background-size: cover;
-        background-position: center;
-    }
-    
     h1 {
         font-size: 5rem;
-        opacity: 100%;
-        color: #e8bd14;
-        font-weight: 900;
-        margin: 7rem;
-    }
-
-    .history, .hero, .royal-family {
-        margin: 3.5vw 12rem ;
-    }
-
-    h2{
-        font-size: 3rem;
-    }
-
-    .text {
-        font-size: 2rem;
-    }
-
-    #author {
-        font-weight: 600;
-        font-size: 1.5rem;
-    }
-
-    .library {
-        width: 30rem;
-    }
-
-    div.img-container img {
-        border-radius: 50px;
     }
 
     footer img {
