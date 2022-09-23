@@ -47,6 +47,10 @@ a {
     font-size: 5vw;
 }
 
+a:active {
+    color: #e6de79;
+}
+
 .logo a {
     color: #e6de79;
     font-family: var(--title-font);

@@ -43,6 +43,10 @@ a {
     font-size: 5vw;
 }
 
+a:active {
+    color: #e6de79;
+}
+
 .logo a {
     color: #e6de79;
     font-family: var(--title-font);
@@ -80,7 +84,7 @@ h2 {
     padding-left: 4vw;
     font-family: var(--title-font);
     font-size: 9vw;
-    color: var(--lettering-color)
+    color: var(--lettering-color);
 }
 
 .text {
@@ -102,7 +106,12 @@ h2 {
 a.learn {
     text-align: right;
     margin-bottom: 3vw;
+    margin-left: 4rem;
     color: var(--main-color);
+}
+
+a.learn:active {
+    color: var(--title-color);
 }
 
 .library {
@@ -180,16 +189,30 @@ footer img {
         margin: 7rem;
     }
 
-    .history, .hero, .royal-family {
-        margin: 3.5vw 12rem ;
+    .history {
+        margin: 2rem 4rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: center;
+        align-items: center;
     }
 
-    h2{
+    .title-history {
+        grid-column: 1 / 2;
+    }
+
+    .hero, .royal-family {
+        margin: 2rem 6rem ;
+    }
+
+
+    h2 {
         font-size: 3rem;
     }
 
     .text {
         font-size: 2rem;
+        grid-column: 1 / 2;
     }
 
     #author {
@@ -198,11 +221,15 @@ footer img {
     }
 
     .library {
-        width: 30rem;
+        width: 23rem;
+        margin-left: 3.5rem;
+        grid-column: 2 / 3;
+        align-self: start;
     }
 
     div.img-container img {
         border-radius: 50px;
+        width: 90%;
     }
 
     footer img {
